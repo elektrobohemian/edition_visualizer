@@ -1,0 +1,20 @@
+*.bak
+**/*.tif
+**/*.pyc
+*.pickle
+*.picklez
+tmp*/
+pickle_bak/
+*.pickle_bak
+*.bak/
+.DS_Store
+*.pdf
+nbproject/
+*/download/
+analysis/
+
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints*
+

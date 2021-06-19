@@ -1,0 +1,102 @@
+{
+  "project": {
+    "name": "Vergleichsstudie Spielbücher",
+    "quality": 1
+ },
+  "loader": {
+    "info": "./data/info.md",
+    "timeline": "./data/timeline.csv",
+    "items": "./data/edition_vis.csv",
+    "tsne": "./data/tsne_kids.csv",
+    "textures": {
+      "medium": {
+        "size": 256,
+        "url": "./data/edition_vis_kids/sprites/spritesheet.json"
+      },
+      "detail": {
+        "size": 1024,
+        "url": "./data/edition_vis_kids/1024/"
+      },
+      "big": {
+        "size": 4096,
+        "url": "./data/edition_vis_kids/4096/"
+      }
+    }
+  },
+  "style": {
+    "fontColor": "#eaedef",
+    "fontColorActive": "#eae2cb",
+    "fontBackground": "#295b71",
+    "textShadow": "1px 1px 0px #000000",
+    "canvasBackground": "#4e5a65",
+    "timelineBackground": "#fff9eb",
+    "timelineFontColor": "#000",
+    "backgroundHeader": "#035151",
+    "fontColorHeader": "#f8774f",
+    "detailBackground": "#EEE",
+    "infoBackground": "#33444c",
+    "infoFontColor": "#fff",
+    "searchbarBackground": "#295b71"
+  },
+  "projection": {
+    "columns": 6
+  },
+  "detail": {
+    "structure": [   
+      {
+        "name": "Title",
+        "source": "_title",
+        "display": "column",
+        "type": "text"
+      },   
+      {
+        "name": "Verlag",
+        "source": "_publisher",
+        "display": "column",
+        "type": "text"
+      }, 
+      {
+        "name": "Ort",
+        "source": "_place",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Jahr",
+        "source": "_date",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Beschreibung",
+        "source": "_description",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Dominantes Sentiment",
+        "source": "_sentiment",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Seite (physisch)",
+        "source": "_realpage",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Schlagworte",
+        "source": "_keywords",
+        "display": "column",
+        "type": "array"
+      },
+      {
+        "name": "Id",
+        "source": "_id",
+        "display": "column",
+        "type": "text"
+      }
+    ]
+  }
+}
